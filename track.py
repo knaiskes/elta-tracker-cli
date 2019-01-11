@@ -6,6 +6,11 @@ url = "https://www.elta.gr/en-us/personal/tracktrace.aspx?qc="
 print("Enter your tracking number: ")
 tracking_number = input()
 
+while(len(tracking_number) != 12 and len(tracking_number) != 13):
+    print("Tracking number has 12 or 13 characters")
+    print("Try again: ")
+    tracking_number = input()
+
 url = url + tracking_number 
 
 page = requests.get(url)
