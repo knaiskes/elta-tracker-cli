@@ -16,8 +16,12 @@ rows = []
 
 table = soup.find("table", {"class": "tg"})
 
-for row in table.find_all("tr"):
-    rows.append(row.text)
+try:
+    for row in table.find_all("tr"):
+        rows.append(row.text)
 
-for r in reversed(rows[2: -1]):
-    print(r)
+    for r in reversed(rows[2: -1]):
+        print(r)
+except IndexError:
+    print("There are not any tracking information at the moment")
+    print("Check your tracking number or try again later!")
