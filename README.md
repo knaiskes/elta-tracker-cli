@@ -1,6 +1,6 @@
 # elta-tracker-cli
 
-![alt screenshot](screenshot.gif)
+![screenshot](https://user-images.githubusercontent.com/6069054/66716243-1ef91200-edd4-11e9-9501-c5be91178c3c.gif)
 
 ### Install dependencies and run
 
